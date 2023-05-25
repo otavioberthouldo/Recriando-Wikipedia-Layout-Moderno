@@ -12,7 +12,7 @@
     <header>
         <!--Logo Inicio-->
         <div class="logo">   
-            <figure class="logo">
+            <figure>
                 <a href="index.html"> 
                     <img src="assets/img/wikipedia-official.svg" width="50"/>
                 </a>
@@ -32,8 +32,11 @@
             </nav>
         </div>-->
         <!--Pesquisa-->
-        <div>
-            <a href="index"></a>
+        <div class="container">
+            <form action="/form/submit" method="GET">
+                <input type="text" name="text">
+                <input type="submit" name="submit" value="search">
+            </form>
         </div>
         <!--Login-->
         <div class="login">
@@ -47,25 +50,30 @@
     </header>
 
     <div class="bar">
+        <nav>
+            <ul>
+                <li>Artigo</li>
+                <li>Discussão</li>
+            </ul>
+
+        </nav>
 
     </div>
 
     <div class="content">
         <div class="sidebar">
-            <h2>Algoritmo</h2>
+            <h2 id="algoritmo" >Algoritmo</h2>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#Etimologia">Etimologia</a></li>
-                <li><a href="#">Links</a></li>
-                <li><a href="#">Links</a></li>
-                <li><a href="#">Links</a></li>
-                <li><a href="#">Links</a></li>
+                <li><a href="#algoritmo">Inicio</a></li>
+                <li><a href="#etimologia">Etimologia</a></li>
+                <li><a href="#formalismo">Formalismo</a></li>
+                <li><a href="#termino-de-algoritmo">Término de Algoritmo</a></li>
             </ul>
         </div>
 
         <div class="main">
             <main>
-                <section>
+                <article>
                     <div>
                         <figure>
                             <img src="assets/img/Sorting_quicksort_anim.gif" alt="">
@@ -142,12 +150,14 @@
                         .
                     </p>
 
-                </section>
-
-                <section>
-                    <h2 class="sub-title">
-                        <a href="#Etimologia"><span>Etimologia</span></a>    
+                </article>
+                
+                <article>
+                    <h2 id="etimologia">
+                        Etimologia                          
                     </h2>
+                    <hr>  
+                    
                     <p>
                         Os hitoriadores da palavra
                         <i>algoritmo</i>
@@ -189,7 +199,78 @@
                     </p>
 
 
-                </section>
+                </article>
+
+                <article>
+                    <h2 id="formalismo">
+                        Formalismo
+                    </h2>
+                    <hr>
+                    <figure>
+                        <img src="assets/img/Fluxogranma02.gif" alt="Desenho de um fluxograma.">
+                        <figcaption>Fluxograma, um exemplo de lagoritmo imperativo. O estado em vermelho indica a entrada do algoritmo enquanto os estados em verde indicam as possíveis saídas.</figcaption>
+                    </figure>
+
+                    <p>
+                        Umm 
+                        <a href="#programa de computador">programa de computador</a>
+                        é essencialmente um algoritmo que di aoo 
+                        <a href="">computador</a>
+                        os passos específicos e em que ordem eles devem ser executados, como por exemplo, os passos a serem tomados para calcular as notas que serão impressas nos boletins dos anlunos de uma escola. Logo, o algoritmo pode ser considerado uma sequência de operações que podem ser simuladas por uma 
+                        <a href="">máquina de Turing</a> 
+                        completa.
+                    </p>
+
+                    <p>
+                        Quando os procedimentos de um algoritimo envolvem o 
+                        <a href="">processamento de dados</a>
+                        , a informação é lida de uma fonte de entrada, processada e retornada sob novo valor após processamento, o que geralmente é realizado com auxílio de uma ou mais 
+                        <a href="">estrutura de dados</a>
+                        <sup><a href=""><span>[9]</span> </a></sup>
+                        .
+                    </p>
+
+                    <p>
+                        Para qualquer proceso computacional, o algoritmo precisa estar rigorosamente definido, especificando a maneira que ele se comportará em todas as circunstâncias. A corretividade do algoritmo pode ser provada matematicamente, bem como a quantidade assintótica de tempo e espaço (complexidade) necessários para a sua execução. Estes aspectos dos algoritmos são alvo da 
+                        <a href="">análise de algoritmos</a>
+                        .
+                    </p>
+
+                    <p>
+                        A maneira mais simples de se pensar um algoritmo é por uma
+                        <a href="">lista</a>
+                        de procedimentos bem definida, na qual as instruções são executadas passo a passo a partir do começo da lista, uma ideia que pode ser facilmente visualizada através de um 
+                        <a href="">fluxograma</a>
+                        . Tal formalização adota as premissas da 
+                        <a href="">programação imperativa</a>
+                        ,que é uma forma mecânica para visualizar e desenvolver um algoritmo. Concepções alternativas para algoritmos variam em 
+                        <a href="">programação funcional</a>
+                        e
+                        <a href="">programação lógica</a>
+                        .
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="termino-de-algoritmo">
+                        Término do algoritmo
+                    </h2>
+                    <hr>
+
+                    <p>
+                        Alguns autores restringem a definição de algoritmo para procedimentos que eventualmente terminam. 
+                        <a href="">Marvin Minsky</a>
+                        constatou que se o tamanho de um procedimento não é conhecido de antemão, tentar descobri-lo é um problema indecidível, já que o procedimento pode ser executado infinitamente, de forma que nunca se terá a resposta. Alan Turing provou em 
+                        <a href="">1936</a>
+                        que não existe máquina de Turing para realizar tal análise para todos os casos, logo não há algoritmo para realizar tal tarefa  para todos os casos. Tal condição é conhecida atualmente como 
+                        <a href="">problema da parada</a>
+                        .
+                    </p>
+
+                    <p>
+                        Para altoritmos intermináveis o sucesso não pode ser determindo pela interpretação da resposta e sim por condições impostas pelo próprio desenvolvedor do algoritmo durante sua execução.
+                    </p>
+                </article>
                 
             </main>
         </div>
