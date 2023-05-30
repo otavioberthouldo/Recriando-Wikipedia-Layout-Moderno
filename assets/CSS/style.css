@@ -4,21 +4,80 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     background-color: #ECF5FC;
 }
+
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:0px;
-    margin: 0px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+
+/* Inicio Header */
+header {
+    background-color: #ECF5FC;   
 }
 
-.bar nav{
-    text-align: right;
+.login {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.navbar {
+    border-bottom: solid 1px #ECF5FC;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}   
+.logoglobo {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    width: 3em;
+    height: 3em;
+}
+
+.logocontainer{
+    max-width: none;
+    float: left;
+}
+.navlink {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 0 34px;
+
+}
+.logowordmark{
+    display: block;
+    margin: auto;
+}
+
+.logotag{
+    display: block;
+    margin: 5px auto 0;
+}
+/* Fim Header */
+
+
+.bar {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.title-main {
+    padding: 0;
+    margin: -20px;
+    margin-left: 336px;
     
 }
+
+.link-title {
+    margin-left: 336px;
+    
+}
+
 .content {
+    background-color: #ECF5FC;
     max-width: 1440px;
     margin: auto;
     grid-gap: 3rem;
@@ -40,49 +99,32 @@ a { color:blue; text-decoration: none;}
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-figure {
-    text-align: center;
-}
 
-.login {
-    border-radius: 1px red;
-}
-/* corrigir este CSS
-.nav {
-    border-radius: 1px red;
-}
-.logo{
-    border: 1px solid rgb(255, 16, 16);
-    display: block;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-.container {
-    border: 1px solid blue;
-    width: 100vw;
-    
+
+
+
+
+/*Tela de Cadastro*/
+.main-block {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-
-
-  form {
-    
-    margin: auto;
-    
-  }
-  input {
-    padding: 4px 10px;
-    border: 0;
-    font-size: 16px;
-  }
-  .search {
-    width: 75%;
-  }
-  .submit {
-    width: 70px;
-    background-color: #1c87c9;
-    color: #ffffff;
+    background: #ECF5FC;
+    }
+form {
+    width: 100%;
+    padding: 20px;
+    }
+fieldset {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    }
+label {
+    padding: 0 5px;
+    text-align: right;
+    vertical-align: middle;
+    }
+input {
+    padding: 5px;
+    vertical-align: middle;
+}

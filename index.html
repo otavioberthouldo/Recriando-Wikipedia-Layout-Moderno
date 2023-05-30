@@ -10,59 +10,40 @@
 </head>
 <body>
     <header>
-        <!--Logo Inicio-->
-        <div class="logo">   
-            <figure>
-                <a href="index.html"> 
-                    <img src="assets/img/wikipedia-official.svg" width="50"/>
-                </a>
-            </figure>
-        </div>
-        <!--Menu Hamburguer
-        <div>
-            <nav>
+        <nav class="navbar">
+            <a href="index.html">
+                <img class="logoglobo" src="assets/img/Wikipedia_logo_(svg).svg" width="50px" alt="">
+                <span class="logocontainer">
+                    <img class="logowordmark" src="assets/img/wikipedia-wordmark-fr.svg" alt="">
+                    <img class="logotag" src="assets/img/wikipedia-tagline-pt.svg" alt="">
+                </span>
+            </a>
+            <div class="navlink">
                 <ul>
-                    <li>Menu principal</li>
-                    <li>Págiana principal</li>
-                    <li>Conteúdo destacado</li>
-                    <li>Eventos atuais</li>
-                    <li>Esplanada</li>
-                    <li>Página aleatória</li>
+                    <li>
+                        <a href="register.html">Criar uma conta</a>
+                        <a href="#">Entrar</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>-->
-        <!--Pesquisa-->
-        <div class="container">
-            <form action="/form/submit" method="GET">
-                <input type="text" name="text">
-                <input type="submit" name="submit" value="search">
-            </form>
-        </div>
-        <!--Login-->
-        <div class="login">
-            <nav>
-                <ul>
-                    <li><a href="index">Criar uma conta</a></li>
-                    <li><a href="index">Entrar</a></li>
-                </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <div class="bar">
-        <nav>
-            <ul>
-                <li>Artigo</li>
-                <li>Discussão</li>
-            </ul>
-
-        </nav>
-
+            <div class="title-main">
+                <h1><span>Algoritmo</span></h1> 
+            </div>
+            <div class="link-title">
+                <ul>
+                    <li> <a href="#">Artigo</a> </li>
+                    <li> <a href="#">Discussão</a>   </li>
+                </ul>
+            </div>
     </div>
 
     <div class="content">
         <div class="sidebar">
-            <h2 id="algoritmo" >Algoritmo</h2>
+            
             <ul>
                 <li><a href="#algoritmo">Inicio</a></li>
                 <li><a href="#etimologia">Etimologia</a></li>
