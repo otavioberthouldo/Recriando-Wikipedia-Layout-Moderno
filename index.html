@@ -18,6 +18,12 @@
                     <img class="logotag" src="assets/img/wikipedia-tagline-pt.svg" alt="">
                 </span>
             </a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Pesquisar na Wikipédia" name="search">
+                  <button type="submit">Pesquisar</button>
+                </form>
+              </div>
             <div class="navlink">
                 <ul>
                     <li>
@@ -30,15 +36,13 @@
     </header>
 
     <div class="bar">
-            <div class="title-main">
-                <h1><span>Algoritmo</span></h1> 
-            </div>
             <div class="link-title">
                 <ul>
                     <li> <a href="#">Artigo</a> </li>
                     <li> <a href="#">Discussão</a>   </li>
                 </ul>
             </div>
+            <hr>
     </div>
 
     <div class="content">
@@ -49,16 +53,25 @@
                 <li><a href="#etimologia">Etimologia</a></li>
                 <li><a href="#formalismo">Formalismo</a></li>
                 <li><a href="#termino-de-algoritmo">Término de Algoritmo</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
             </ul>
         </div>
 
         <div class="main">
             <main>
+                
+                <div>
+                    <h1><span>Algoritmo</span></h1> 
+                </div>
+                <hr>
+
                 <article>
-                    <div>
+                    <div class="img-card">
                         <figure>
-                            <img src="assets/img/Sorting_quicksort_anim.gif" alt="">
-                            <figcaption>Uma animação do algoritmo de ordenação quicksort de uma matriz de valores ao acaso. As barras vermelhas marcam o elemento pivô. No início da animação, estando o elemento para o lado direito, é escolhido como o pivô</figcaption>
+                            <img class="image-ex" src="assets/img/Sorting_quicksort_anim.gif" alt="">
+                                <div class="img-caption">
+                                    <figcaption>Uma animação do algoritmo de ordenação quicksort de uma matriz de valores ao acaso. As barras vermelhas marcam o elemento pivô. No início da animação, estando o elemento para o lado direito, é escolhido como o pivô</figcaption>
+                                </div>
                         </figure>
                     </div>
                     <p> 
@@ -179,7 +192,6 @@
                         
                     </p>
 
-
                 </article>
 
                 <article>
@@ -187,11 +199,12 @@
                         Formalismo
                     </h2>
                     <hr>
-                    <figure>
-                        <img src="assets/img/Fluxogranma02.gif" alt="Desenho de um fluxograma.">
-                        <figcaption>Fluxograma, um exemplo de lagoritmo imperativo. O estado em vermelho indica a entrada do algoritmo enquanto os estados em verde indicam as possíveis saídas.</figcaption>
-                    </figure>
-
+                    <div class="img-card">
+                        <figure>
+                            <img class="image-ex" src="assets/img/Fluxogranma02.gif" alt="Desenho de um fluxograma.">
+                            <figcaption class="img-caption">Fluxograma, um exemplo de lagoritmo imperativo. O estado em vermelho indica a entrada do algoritmo enquanto os estados em verde indicam as possíveis saídas.</figcaption>
+                        </figure>
+                    </div>
                     <p>
                         Umm 
                         <a href="#programa de computador">programa de computador</a>
@@ -252,6 +265,75 @@
                         Para altoritmos intermináveis o sucesso não pode ser determindo pela interpretação da resposta e sim por condições impostas pelo próprio desenvolvedor do algoritmo durante sua execução.
                     </p>
                 </article>
+
+                <article>
+                    <h2 id="exemplos">
+                        Exemplos
+                    </h2>
+                    <hr>
+                    <div class="img-card">
+                        <figure>
+                            <img class="image-ex" src="assets/img/220px-Torre_de_Hanói.jpg" alt="">
+                            <figcaption class="img-caption">
+                                Imagem da torre de Hanói (com três discos), mostrando como estariam as peças no início e no fim da solução
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <p>
+                        Alguns exemplos genéricos de algoritmos são: uma coreografia, um manual de instruções, uma receita culinária, Técnicas para resolver problemas matemáticos, uma pesquisa na internet, dentre outros.
+                    </p>
+
+                    <h4>Torre de Hanói</h4>
+                    <p> 
+                        Um clássico problema que trabalha o desenvolvimento da lógica e do raciocínio   matemático é a 
+                        <a href="#">torre de Hanói</a>
+                        , unventado pelo matemático francês 
+                        <a href="#"> Édouard Lucas em 1983</a>
+                        .
+                        <a href="#"><sup>[10]</sup></a>
+                        O quebra-cabeça é composto por três hastes e vários discos de tamanhos diferentes, que podem deslizar para qualquer haste. O quebra-cabeça começa com os discos em uma pilha organizada em ordem crescente de tamanho em uma haste, a menor no topo, fazendo assim uma forma cônica.
+                    </p>
+                    <p>
+                        O quebra-cabeça é composto por três hastes e vários discos de tamanhos diferentes, que podem deslizar para qualquer haste. O quebra-cabeça começa com os discos em uma pilha organizada em ordem crescente de tamanho em uma haste, a menor no topo, fazendo assim uma forma cônica. 
+                    </p>
+
+                    <h5>
+                        Solução em forma narrativa
+                    </h5>
+
+                    <div class="img-card-1">
+                        <figure class="image-ex-1">
+                            <img class src="assets/img/Resolução_da_torre_de_Hanói_de_três_discos.png" alt="">
+                            <figcaption class="img-caption">Resolução da torre de Hanói (com três discos)</figcaption>
+                        </figure>
+                    </div>
+                    <p>
+                        Nomeiam-se as hastes como A, B e C e os discos como Vermelho, Verde e Azul. Considera-se que inicialmente os discos estão na haste A. Segue uma sequência de passos para a resolução do quebra-cabeça:
+                    </p>
+
+                    <ol>
+                        <li>move-se o disco Vermelho para a haste C;</li>
+                        <li>move-se o disco Verde para a haste B;</li>
+                        <li>move-se o disco Verde para a haste B;</li>
+                        <li>move-se o disco Verde para a haste B;</li>
+                        <li>move-se o disco Vermelho para a haste A;</li>
+                        <li>move-se o disco Vermelho para a haste A;</li>
+                        <li>move-se o disco Vermelho para a haste C.</li>
+                    </ol>
+
+                    <h5>Solução em forma gráfica</h5>
+
+                    <p>
+                        Podemos também representar a solução em forma gráfica, desenhando as hastes e a posição dos discos a cada movimento (ou passo). Com 3 discos, o quebra-cabeça pode ser resolvido em 7 movimentos. O número mínimo de movimentos necessários para resolver um quebra-cabeça da Torre de Hanói é 2^-1, one o n é o número de discos 
+                    </p>
+
+                    <p>
+                        Essa sequência, ou descrição, finita de passos ou tarefas é a quem chamamos de algoritmos.
+                    </p>
+                </article>
+
+                <a href="">Redirecionar para o topo do artigo</a>
                 
             </main>
         </div>
@@ -265,7 +347,7 @@
     </div>
 
     <div class="footer">
-
+        <p>desenvolvido</p>
     </div>
 </body>
 </html>

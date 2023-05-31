@@ -5,7 +5,7 @@ body, html {
     background-color: #ECF5FC;
 }
 
-ul { list-style: none; padding-left: 5px; }
+ul { list-style: none;}
 a { color:blue; text-decoration: none;}
 
 /* Inicio Header */
@@ -55,13 +55,76 @@ header {
     display: block;
     margin: 5px auto 0;
 }
+
+.header .search-container{
+    float: inherit;
+}
+.navbar .search-container {
+  float: inherit;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: inherit;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.navbar .search-container {
+    float: inherit;
+    
+  }
+.navbar a, .navbar input[type=text], .navbar .search-container button {
+    float: none;
+    display: inline;
+    text-align: left;
+    margin: 0;
+}
+.navbar input[type=text] {
+    border: 1px solid #ccc;  
+}
+
+
+
+
+
+
 /* Fim Header */
 
 
 .bar {
-    
+    background-color: #343434;
+    height: 45px;
     padding: 0;
-    margin: 0;
+    margin-left:20px;;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.bar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .title-main {
@@ -101,8 +164,47 @@ header {
 }
 
 
+.img-card{
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    width: 270px;
+    display: block;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    
+}
+figure{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.image-ex{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
 
+.img-caption{   
+    font-size: 85%;
+    text-align: justify;
+}
 
+/*imagem-1*/
+.img-card-1{
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    width: 170px;
+    display: block;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+figure{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
 /*Tela de Cadastro*/
 .main-block {
@@ -124,7 +226,3 @@ label {
     text-align: right;
     vertical-align: middle;
     }
-input {
-    padding: 5px;
-    vertical-align: middle;
-}
