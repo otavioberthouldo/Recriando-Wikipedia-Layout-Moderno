@@ -1,5 +1,5 @@
 # Recriando-Wikipedia-Layout-Moderno
- Módulo 3 - Trilha HTML - Recriando Wikipedia
+DIO - Carreira -Desenvolvedor-Front-End Módulo 3 - Trilha HTML - Recriando Wikipedia
 
 **Título:** Recriando Wikipedia, com um layout melhor :)
 
