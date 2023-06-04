@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    background-color: #ECF5FC;
+    background-color: #BCC2E0;
 }
 
 ul { list-style: none;}
@@ -10,7 +10,11 @@ a { color:blue; text-decoration: none;}
 
 /* Inicio Header */
 header {
-    background-color: #ECF5FC;   
+    background-color: #676A7A;   
+}
+header a {
+    color: #fff;
+    padding-left: 20px;
 }
 
 .login {
@@ -60,87 +64,83 @@ header {
     float: inherit;
 }
 .navbar .search-container {
-  float: inherit;
+    float: inherit;
 }
 
-.navbar input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.navbar input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
-.navbar .search-container button {
-  float: inherit;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
+.navbar input[type="text"] {
+    position: relative;
+    border-radius: 25px 0 0 25px;
+    width: 450px;
+    height: 30px;
+    padding: 0 25px;
+    outline: none;
+    border: none;
+}  
 
-.navbar .search-container button:hover {
-  background: #ccc;
+.navbar input[type="submit"] {
+    background-color: #7e7e7e;
+    position: relative;
+    left: -10px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .navbar .search-container {
     float: inherit;
-    
-  }
+}
 .navbar a, .navbar input[type=text], .navbar .search-container button {
     float: none;
     display: inline;
     text-align: left;
     margin: 0;
 }
-.navbar input[type=text] {
-    border: 1px solid #ccc;  
-}
-
-
-
-
-
-
 /* Fim Header */
 
-
+/*Inicio Barra*/ 
 .bar {
-    background-color: #343434;
-    height: 45px;
-    padding: 0;
-    margin-left:20px;;
-    margin-top: 0;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    justify-content: center;
 }
 
-.bar a {
-  float: left;
-  display: block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
-  font-size: 17px;
+.link-title {
+    background-color: #9CA1BA;
+    justify-content: center;
+    font-size: 17px;
+    text-align: center;
+}
+
+.bar ul li {
+    display: inline;
+    justify-content: center; 
+}
+
+.bar ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;    
 }
 
 .title-main {
     padding: 0;
     margin: -20px;
     margin-left: 336px;
-    
 }
 
-.link-title {
-    margin-left: 336px;
-    
-}
-
+/*Fim Barra*/ 
 .content {
-    background-color: #ECF5FC;
+    background-color: #BCC2E0;
     max-width: 1440px;
     margin: auto;
     grid-gap: 3rem;
@@ -150,19 +150,37 @@ header {
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 20px;
 }
+
 .footer {
+    background-color: #9CA1BA ;
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline;
+    justify-content: center;
+    padding: 20px;
+}
+
+.desenvolvedor {
+    justify-content: center;
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
 .sidebar {
+    display: block;
     border-right: solid 1px #cdcdcd;
 }
 
+.sidebar h2 {
+    text-align: center;
+}
 
 .img-card{
     border: 1px solid #c8ccd1;
@@ -171,14 +189,15 @@ header {
     display: block;
     float: right;
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;  
 }
+
 figure{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
 }
+
 .image-ex{
     width: 100%;
     padding: 0px;
@@ -200,29 +219,25 @@ figure{
     margin: 0px;
     padding: 0px;
 }
+
 figure{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
 }
 
-/*Tela de Cadastro*/
-.main-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ECF5FC;
-    }
-form {
-    width: 100%;
-    padding: 20px;
-    }
-fieldset {
-    border: none;
-    border-top: 1px solid #cdcdcd;
-    }
-label {
-    padding: 0 5px;
-    text-align: right;
-    vertical-align: middle;
-    }
+.redirect {
+    margin-top: 100px;
+}
+
+/*Inicio anchors*/
+.anchors h2 {
+    text-align: center;
+}
+.anchors ul li {
+    text-align: left;
+    list-style-type: circle;
+}
+.anchors a {
+    font-size: 14px;
+}
